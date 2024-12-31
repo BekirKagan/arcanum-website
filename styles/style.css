@@ -33,13 +33,25 @@ nav {
   font-size: 18px;
 
   height: 80px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px 0px 10px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   background-color: var(--bg-secondary);
+}
+
+#brand-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+#brand-container a {
+  font-size: 24px;
+  font-weight: bolder;
 }
 
 #links-container {
@@ -85,6 +97,8 @@ nav {
 
   background-color: var(--accent-primary);
   color: var(--bg-primary);
+
+  box-shadow: 4px 4px var(--text-color);
 }
 
 #content-links-container a:hover {
@@ -107,6 +121,7 @@ footer {
 .link-no-decorations {
   text-decoration: none;
   cursor: pointer;
+  user-select: none;
   color: var(--text-color);
 }
 
