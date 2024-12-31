@@ -3,3 +3,121 @@
   Licensed under the MIT License.
   See LICENSE_CODE in the "licenses" directory for full details.
 */
+
+:root {
+  --bg-primary: #121212;
+  --bg-secondary: #1E1E2F;
+  --accent-primary: #00ADB5;
+  --text-color: #E0E0E0;
+  --highlight: #F9D342;
+
+  background-color: var(--bg-primary);
+  color: var(--text-color);
+
+  font-family: monospace, Roboto, serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  flex: 0 1 auto;
+
+  font-size: 18px;
+
+  height: 80px;
+  padding: 0px 20px 0px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--bg-secondary);
+}
+
+#links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+#content-section {
+  flex: 1 1 auto;
+
+  margin: 80px;
+
+  font-size: 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#content-section p {
+  font-size: 20px;
+
+  margin-bottom: 50px;
+
+  border-left: 10px solid transparent;
+  border-right: 10px solid var(--highlight);
+  animation: blink-caret 1s step-end infinite;
+}
+
+#content-links-container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+#content-links-container a {
+  padding: 14px;
+
+  font-size: 18px;
+  border-radius: 20px;
+
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
+}
+
+#content-links-container a:hover {
+  background-color: var(--highlight);
+  color: var(--bg-primary);
+}
+
+footer {
+  flex: 0 1 auto;
+
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--bg-secondary);
+}
+
+.link-no-decorations {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-right-color: transparent
+  }
+
+  50% {
+    border-right-color: var(--highlight);
+  }
+}
