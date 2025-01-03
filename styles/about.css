@@ -1,0 +1,13 @@
+/*
+  This file is part of the Arcanum Website.
+  Licensed under the MIT License.
+  See LICENSE_CODE in the "licenses" directory for full details.
+*/
+
+:root {
+  --bg-primary: #121212;
+  --bg-secondary: #1E1E2F;
+  --text-color: #E0E0E0;
+  --accent-primary: #00ADB5;
+  --highlight: #F9D342;
+}

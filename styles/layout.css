@@ -1,0 +1,101 @@
+/*
+  This file is part of the Arcanum Website.
+  Licensed under the MIT License.
+  See LICENSE_CODE in the "licenses" directory for full details.
+*/
+
+:root {
+  --bg-primary: #121212;
+  --bg-secondary: #1E1E2F;
+  --text-color: #E0E0E0;
+  --accent-primary: #00ADB5;
+  --highlight: #F9D342;
+
+  background-color: var(--bg-primary);
+  color: var(--text-color);
+  font-family: monospace;
+  font-size: 18px;
+}
+
+#brand-link {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#link-container {
+  display: flex;
+  gap: 30px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px 0px 30px;
+  background-color: var(--bg-secondary);
+}
+
+section {
+  width: 100%;
+  overflow: scroll;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-secondary);
+}
+
+a {
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+button {
+  font-size: 0.75em;
+  border: 0px;
+  border-radius: 0.5em;
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
+  transition: background-color 100ms ease 0s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--highlight);
+  color: var(--bg-primary);
+  transition: background-color 100ms ease 0s;
+}
+
+.terminal-text {
+  width: fit-content;
+  border-right: 0.5em solid var(--highlight);
+  animation: terminal-cursor-blink 1s step-end infinite;
+}
+
+@keyframes terminal-cursor-blink {
+
+  from,
+  to {
+    border-right-color: transparent;
+  }
+
+  50% {
+    border-right-color: var(--highlight);
+  }
+}
