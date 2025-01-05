@@ -4,13 +4,7 @@
   See LICENSE_CODE in the "licenses" directory for full details.
 */
 
-:root {
-  --bg-primary: #121212;
-  --bg-secondary: #1E1E2F;
-  --text-color: #E0E0E0;
-  --accent-primary: #00ADB5;
-  --highlight: #F9D342;
-}
+@import url("layout.css");
 
 #button-container {
   display: flex;
@@ -42,5 +36,5 @@ section {
 section button {
   width: 200px;
   height: 50px;
-  border: 1px solid;
+  border: 1px solid var(--text-color);
 }

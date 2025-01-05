@@ -4,10 +4,19 @@
   See LICENSE_CODE in the "licenses" directory for full details.
 */
 
-:root {
-  --bg-primary: #121212;
-  --bg-secondary: #1E1E2F;
-  --text-color: #E0E0E0;
-  --accent-primary: #00ADB5;
-  --highlight: #F9D342;
+@import url("layout.css");
+
+section h1 {
+  color: var(--accent-primary);
+}
+
+section div {
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.highlight-text {
+  color: var(--highlight);
+  text-wrap-mode: nowrap;
 }
