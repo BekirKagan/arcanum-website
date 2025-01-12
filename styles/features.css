@@ -5,3 +5,59 @@
 */
 
 @import url("layout.css");
+
+section {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section h1 {
+  color: var(--accent-primary);
+}
+
+#card-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  height: 75%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 20px;
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--accent-primary);
+  border-radius: 10px;
+  transition: border-color 200ms;
+}
+
+.card:hover {
+  border-color: var(--highlight);
+}
+
+.card hr {
+  color: var(--accent-primary);
+}
+
+.feature-header {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.feature-short {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.feature-long {
+  font-size: 18px;
+}
