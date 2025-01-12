@@ -116,6 +116,12 @@ textarea:focus {
   background-color: #0F3464;
   color: #FAFBFC;
   border: 2px solid #FAFBFC;
+  user-select: text;
+  cursor: text;
+}
+
+#email-contact img {
+  user-select: none;
 }
 
 #email-contact:hover {

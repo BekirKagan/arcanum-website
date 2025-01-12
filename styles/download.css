@@ -5,3 +5,89 @@
 */
 
 @import url("layout.css");
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section h1 {
+  color: var(--accent-primary);
+}
+
+section div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vl {
+  border-left: 2px solid var(--highlight);
+  height: 200px;
+}
+
+.special-button {
+  width: 300px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-left: 10px;
+  gap: 20px;
+  background-color: #24292E;
+  color: #FAFBFC;
+  border: 2px solid #FAFBFC;
+  border-radius: 10px;
+}
+
+.special-button img {
+  width: 50px;
+}
+
+#windows-card {
+  background-color: #357EC7;
+  color: #FFFFFF;
+  border: 2px solid #F5F5F5;
+}
+
+#windows-card:hover {
+  background-color: #4E8FD0;
+  color: #FFFFFF;
+}
+
+#macos-card {
+  background-color: #555555;
+  color: #F5F5F5;
+  border: 2px solid #F5F5F5;
+}
+
+#macos-card:hover {
+  background-color: #666666;
+  color: #FFFFFF;
+}
+
+#linux-card {
+  background-color: #FFCC33;
+  color: #000000;
+  border: 2px solid #F5F5F5;
+}
+
+#linux-card:hover {
+  background-color: #FFDD44;
+  color: #111111;
+}
+
+#github-button {
+  background-color: #24292E;
+  color: #FAFBFC;
+  border: 2px solid #FAFBFC;
+}
+
+#github-button:hover {
+  background-color: #2B3137;
+  color: #FFFFFF;
+}
