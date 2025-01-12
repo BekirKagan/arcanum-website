@@ -5,3 +5,147 @@
 */
 
 @import url("layout.css");
+
+section {
+  text-align: center;
+}
+
+section h1 {
+  color: var(--accent-primary);
+}
+
+section div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section div div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#card-container {
+  flex: 1;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#form-container {
+  flex: 1;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+input {
+  width: 300px;
+  height: 35px;
+  margin-bottom: 10px;
+  border: 1px solid var(--accent-primary);
+  border-radius: 5px;
+  background-color: var(--bg-secondary);
+  color: var(--text-color);
+  text-align: center;
+}
+
+input:focus {
+  border-color: var(--highlight);
+  outline: none;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--accent-primary);
+  border-radius: 5px;
+  background-color: var(--bg-secondary);
+  color: var(--text-color);
+  resize: none;
+}
+
+textarea:focus {
+  border-color: var(--highlight);
+  outline: none;
+}
+
+.vl {
+  border-left: 2px solid var(--highlight);
+  height: 470px;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  top: 27%;
+}
+
+.special-button {
+  width: 500px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  background-color: #24292E;
+  color: #FAFBFC;
+  border: 2px solid #FAFBFC;
+  border-radius: 10px;
+}
+
+.special-button img {
+  width: 50px;
+}
+
+#email-contact {
+  background-color: #0F3464;
+  color: #FAFBFC;
+  border: 2px solid #FAFBFC;
+}
+
+#email-contact:hover {
+  background-color: #034FA0;
+  color: #FFFFFF;
+}
+
+#github-contact {
+  background-color: #24292E;
+  color: #FAFBFC;
+  border: 2px solid #FAFBFC;
+}
+
+#github-contact:hover {
+  background-color: #2B3137;
+  color: #FFFFFF;
+}
+
+#instagram-contact {
+  background: #F09433;
+  background: -moz-linear-gradient(45deg, #F09433 0%, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888 100%);
+  background: -webkit-linear-gradient(45deg, #F09433 0%, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888 100%);
+  background: linear-gradient(45deg, #F09433 0%, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+  color: #FAFBFC;
+  border: 2px solid #FAFBFC;
+}
+
+#instagram-contact:hover {
+  background: #F09433;
+  background: -moz-linear-gradient(45deg, #F2A654 0%, #EA825D 25%, #E03E56 50%, #DC2E73 75%, #D91C9D 100%);
+  background: -webkit-linear-gradient(45deg, #F2A654 0%, #EA825D 25%, #E03E56 50%, #DC2E73 75%, #D91C9D 100%);
+  background: linear-gradient(45deg, #F2A654 0%, #EA825D 25%, #E03E56 50%, #DC2E73 75%, #D91C9D 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+  color: #FFFFFF;
+}
